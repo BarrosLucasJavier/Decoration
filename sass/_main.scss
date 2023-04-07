@@ -7,3 +7,58 @@
     font-family: 'Inter', sans-serif; ;
 }
 
+//barra de navegación
+.decouvrir-header{
+    position: relative;
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 3rem;
+        ul{
+            li{
+                list-style: none;
+                display: inline;
+                text-transform: uppercase;
+                margin: 0 10px;
+                padding: 0.3rem 1rem;
+                font-size: 0.75rem;
+                font-weight: 600;
+                &:hover{
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    img{
+        width: 100%;
+        position: absolute;
+        top: 40px;
+        z-index: -1;
+    }
+    .card-header{
+        max-width: 25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        position: absolute;
+        left:calc(50vw - 12.5rem);
+        top: 20rem;
+        text-align: center;
+        a{
+            text-decoration: none;
+            color: components.$color-second;
+        }
+        h1{
+            text-transform: uppercase;
+            font-family: 'Secular One', sans-serif;
+            font-weight: 400;
+        }
+        p{
+            font-size: 0.875rem;
+            font-weight: 300;
+        }
+    }
+}

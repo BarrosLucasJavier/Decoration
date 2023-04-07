@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Secular+One&display=swap');
 
+$color-main: #DD7806;
+$color-second:#F7BF5B;
+
 .btn-main{
-    width: 7.5rem;
-    padding: 0.4rem;
+    padding: 0.4rem 1rem;
     border-radius: 9rem;
-    margin: 1rem 0;
     letter-spacing: 0.3rem;
+    border: 1px solid $color-second;
+    background-color: $color-second;
+    &:hover{
+        cursor: pointer;
+        background-color: transparent;
+        color: $color-second;
+    }
+
 }
 
 .card{
@@ -29,4 +38,22 @@
         }
     }
 }
+.logo{
+    display:flex ;
+    align-items: center;
+    gap: 0.5rem;
+    .circle{
+        width: 3rem;
+        height: 3rem;
+        background-color: $color-main;
+        border-radius: 50%;
+    }
+    span{
+        font-size: 2rem;
+    }
+}
 
+.active{
+    background-color: $color-second;
+    border-radius: 1.5rem;
+}
