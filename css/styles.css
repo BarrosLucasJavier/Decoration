@@ -2,7 +2,7 @@
 .btn-main {
   padding: 0.4rem 1rem;
   border-radius: 9rem;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.25rem;
   border: 1px solid #F7BF5B;
   background-color: #F7BF5B;
 }
@@ -18,9 +18,9 @@
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   border-radius: 1.25rem;
   margin: 2rem;
+  background-color: white;
 }
 .card .img {
-  background-image: url("../assets/img/cocina.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 65%;
@@ -30,8 +30,28 @@
   padding: 1rem;
 }
 .card .details h3 {
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   margin-bottom: 1.5rem;
+  font-family: "Secular One", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.card .details p {
+  font-weight: 300;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+.card .details button {
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #3C3432;
+  border: 1px solid #3C3432;
+  color: white;
+  transition: background-color 0.3s;
+}
+.card .details button:hover {
+  background-color: transparent;
+  color: #3C3432;
 }
 
 .logo {
@@ -61,9 +81,6 @@
   font-family: "Inter", sans-serif;
 }
 
-.decouvrir-header {
-  position: relative;
-}
 .decouvrir-header .navbar {
   display: flex;
   justify-content: space-between;
@@ -83,35 +100,136 @@
   text-decoration: underline;
   cursor: pointer;
 }
-.decouvrir-header img {
-  width: 100%;
-  position: absolute;
-  top: 40px;
+.decouvrir-header .img-header {
+  position: relative;
   z-index: -1;
 }
-.decouvrir-header .card-header {
+.decouvrir-header .img-header img {
+  width: 100%;
+  margin-top: -40px;
+}
+.decouvrir-header .img-header .card-header {
   max-width: 25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   position: absolute;
-  left: calc(50vw - 12.5rem);
-  top: 20rem;
+  left: 50%;
+  top: 49%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
-.decouvrir-header .card-header a {
+.decouvrir-header .img-header .card-header a {
   text-decoration: none;
   color: #F7BF5B;
 }
-.decouvrir-header .card-header h1 {
+.decouvrir-header .img-header .card-header h1 {
   text-transform: uppercase;
   font-family: "Secular One", sans-serif;
   font-weight: 400;
 }
-.decouvrir-header .card-header p {
+.decouvrir-header .img-header .card-header p {
   font-size: 0.875rem;
   font-weight: 300;
+}
+
+.main-cards {
+  position: relative;
+  height: 32rem;
+}
+.main-cards .main-circle {
+  width: 11rem;
+  height: 11rem;
+  background-color: #DD7806;
+  border-radius: 50%;
+  margin: 7rem;
+}
+.main-cards h2 {
+  font-weight: 400;
+  font-size: 2.25rem;
+  font-family: "Secular One", sans-serif;
+  text-transform: uppercase;
+  color: #253F4B;
+  position: absolute;
+  top: 0;
+  left: 15.2rem;
+}
+.main-cards .cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  flex-wrap: wrap;
+  top: 7rem;
+  z-index: 5;
+}
+.main-cards .cards .cocina .img {
+  background-image: url("../assets/img/cocina.png");
+}
+.main-cards .cards .living .img {
+  background-image: url("../assets/img/living.png");
+}
+.main-cards .cards .dormitorio .img {
+  background-image: url("../assets/img/dormitorio.png");
+}
+
+.background {
+  background-color: #F7BF5B;
+  height: 35rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background button {
+  background-color: white;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+.background button:hover {
+  border: 1px solid white;
+  color: white;
+}
+
+.big-card {
+  position: relative;
+  top: -5rem;
+  width: 75vw;
+  height: 32rem;
+  margin: auto;
+  display: flex;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+.big-card .img {
+  width: 50%;
+  background-image: url("../assets/img/silla.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 0 1rem 1rem 0;
+}
+.big-card .details {
+  width: 50%;
+  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  gap: 1.5rem;
+}
+.big-card .details h2 {
+  font-family: "Secular One", sans-serif;
+  font-weight: 400;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+}
+.big-card .details a {
+  text-decoration: none;
+  color: #DD7806;
 }
 
 /*# sourceMappingURL=styles.css.map */

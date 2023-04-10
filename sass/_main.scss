@@ -7,9 +7,8 @@
     font-family: 'Inter', sans-serif; ;
 }
 
-//barra de navegación
+// Header
 .decouvrir-header{
-    position: relative;
     .navbar{
         display: flex;
         justify-content: space-between;
@@ -31,34 +30,145 @@
             }
         }
     }
-    img{
-        width: 100%;
-        position: absolute;
-        top: 40px;
+    .img-header{
+        position: relative;
         z-index: -1;
+        img{
+            width: 100%;
+            margin-top: -40px;
+        }
+        .card-header{
+            max-width: 25rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            position: absolute;
+            left:50%;
+            top: 49%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            a{
+                text-decoration: none;
+                color: components.$color-second;
+            }
+            h1{
+                text-transform: uppercase;
+                font-family: 'Secular One', sans-serif;
+                font-weight: 400;
+            }
+            p{
+                font-size: 0.875rem;
+                font-weight: 300;
+            }
+        }
     }
-    .card-header{
-        max-width: 25rem;
+}
+
+//cards
+
+.main-cards{
+    position: relative;
+    height: 32rem;
+    .main-circle{
+        width: 11rem;
+        height: 11rem;
+        background-color: components.$color-main;
+        border-radius: 50%;
+        margin: 7rem;
+    }
+    h2{
+        font-weight: 400;
+        font-size: 2.25rem;
+        font-family: 'Secular One', sans-serif;
+        text-transform: uppercase;
+        color:#253F4B;
+        position: absolute;
+        top: 0;
+        left: 15.2rem;
+    }
+    .cards{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        position: absolute;
+        flex-wrap: wrap;
+        top: 7rem;
+        z-index: 5;
+        .cocina{
+            .img{
+                background-image: url("../assets/img/cocina.png");
+            }
+        }
+        .living{
+            .img{
+                background-image: url("../assets/img/living.png");
+            }
+        }
+        .dormitorio{
+            .img{
+                background-image: url("../assets/img/dormitorio.png");
+            }
+        }
+    }
+}
+//franja con botón
+.background{
+    background-color: components.$color-second;
+    height: 35rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button{
+        background-color: white;
+        font-weight: 600;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        &:hover{
+            border: 1px solid white;
+            color: white;
+        }
+    }
+}
+
+// tarjeta grande
+
+.big-card{
+    position: relative;
+    top: -5rem;
+    width: 75vw;
+    height: 32rem;
+    margin: auto;
+    display: flex;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: (0px 4px 20px rgba(0, 0, 0, 0.15));
+    .img{
+        width: 50%;
+        background-image: url("../assets/img/silla.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 0 1rem 1rem 0;
+    }
+    .details{
+        width: 50%;
+        padding: 10rem;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        position: absolute;
-        left:calc(50vw - 12.5rem);
-        top: 20rem;
-        text-align: center;
-        a{
-            text-decoration: none;
-            color: components.$color-second;
-        }
-        h1{
-            text-transform: uppercase;
+        justify-content: center;
+        align-items: baseline;
+        gap: 1.5rem;
+        h2{
             font-family: 'Secular One', sans-serif;
             font-weight: 400;
+            font-size: 2.6rem;
+            text-transform: uppercase;
         }
-        p{
-            font-size: 0.875rem;
-            font-weight: 300;
+        a{
+            text-decoration: none;
+            color: components.$color-main;
         }
     }
 }
