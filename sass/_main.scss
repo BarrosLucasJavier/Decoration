@@ -201,3 +201,43 @@
         width: 35rem;
     }
 }
+
+@media (max-width:1600px){
+    .background{
+        height: 70rem;
+        align-items: end;
+        button{
+            margin-bottom: 10rem;
+        }
+    }
+    .big-card{
+        .details{
+            padding: 5rem;
+            h2{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+@media (max-width:1053px){
+    .background{
+        height: 105rem;
+    }
+    .big-card{
+        flex-direction: column;
+        height: 40rem;
+        .details{
+            padding: 1rem;
+            width: auto;
+            padding:2rem;
+        }
+        .img{
+            height:50%;
+            width: auto;
+            border-radius:1rem;
+            width: 90%;
+            margin: auto;
+            background-position: bottom;
+        }
+    }
+}
